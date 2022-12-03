@@ -1,7 +1,9 @@
 import "./Header.scss"
 
 const Nav = () => {
-    return (<nav className="navigation">
+    return (<span>
+
+        <nav className="navigation">
             <a href="#" className="navigation__item">FAQ</a>
             <a href="#" className="navigation__item">Оплата и доставка</a>
             <a href="#" className="navigation__item">Возврат</a>
@@ -10,7 +12,8 @@ const Nav = () => {
             <span className="navigation__item">
                 8 (800) 600-09-90
             </span>
-        </nav>)
+        </nav>
+                    </span>)
 }
 
 export default Nav
