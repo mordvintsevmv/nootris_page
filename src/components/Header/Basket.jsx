@@ -13,7 +13,7 @@ const Basket = ({items_num}) => {
 
             <svg className="basket__circle" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="9" cy="9" r="9" fill="#FCB500"/>
-                <text x="50%" y="70%" textAnchor="middle" className="basket__items">{items_num < 100 ? items_num : "99+"}</text>
+                <text x="50%" y="70%" textAnchor="middle" className={items_num >= 100 ? "basket__items basket__items-extra" : "basket__items"}>{items_num < 100 ? items_num : "99+"}</text>
             </svg>
 
         </span>)

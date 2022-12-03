@@ -11,7 +11,7 @@ const Header = () => {
 
             <Nav/>
 
-            <Basket items_num={30}/>
+            <Basket items_num={100}/>
 
         </div>
     )
