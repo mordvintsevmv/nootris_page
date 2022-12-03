@@ -15,7 +15,7 @@ const Discount = () => {
 
         <div className="discount-offer discount__offer">
             <Card top_text="Содержит" bottom_text="имбирь" img_url="/img/ginger.png"/>
-            <Card top_text="+Бесплатная доставка" bottom_text="Специальная цена" img_url="/img/nootris_h.png"
+            <Card top_text="+ Бесплатная доставка" bottom_text="Специальная цена" img_url="/img/nootris_h.png"
                   upper={true}/>
             <Card top_text="Нейтрализует" bottom_text="вирусы" img_url="/img/virus.png"/>
         </div>
