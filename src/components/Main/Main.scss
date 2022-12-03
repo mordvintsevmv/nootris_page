@@ -13,8 +13,8 @@
 .tagline {
   &__title {
     color: #FFFFFF;
-    line-height: 152px;
-    font-size: 144px;
+    line-height: calc(30px + 122 * (100vw / 1440));
+    font-size: calc(24px + 120 * (100vw / 1440));
     font-weight: 700;
 
     margin: 0;
@@ -22,10 +22,11 @@
 
   &__description {
     font-weight: 400;
-    font-size: 24px;
     line-height: 28px;
 
-    width: 640px;
+    font-size: calc(16px + 8 * (100vw / 1440));
+
+    width: calc(400px + 240 * (100vw / 1440));
     height: 54px;
   }
 }
@@ -75,7 +76,6 @@
     right: 100px;
 
   }
-
 
   &__ginger {
     height: 409px;
