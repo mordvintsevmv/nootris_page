@@ -4,16 +4,15 @@ import Main from "./components/Main/Main";
 import Discount from "./components/Discount/Discount";
 
 function App() {
-    return (
-        <div className="App">
+    return (<div className="App">
 
-            <Header/>
+        <Header/>
 
-            <Main/>
+        <Main/>
 
-            <Discount/>
+        <Discount/>
 
-        </div>);
+    </div>);
 }
 
 export default App;

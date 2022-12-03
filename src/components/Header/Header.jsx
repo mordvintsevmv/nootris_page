@@ -4,17 +4,15 @@ import Basket from "./Basket";
 import Nav from "./Nav";
 
 const Header = () => {
-    return(
-        <div className="header">
+    return (<div className="header">
 
-            <Logo/>
+        <Logo/>
 
-            <Nav/>
+        <Nav/>
 
-            <Basket items_num={100}/>
+        <Basket items_num={100}/>
 
-        </div>
-    )
+    </div>)
 }
 
 export default Header

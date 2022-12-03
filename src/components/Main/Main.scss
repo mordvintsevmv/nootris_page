@@ -1,4 +1,4 @@
-.main{
+.main {
   height: 730px;
 
   background-color: #FCB500;
@@ -10,8 +10,8 @@
 
 }
 
-.tagline{
-  &__title{
+.tagline {
+  &__title {
     color: #FFFFFF;
     line-height: 152px;
     font-size: 144px;
@@ -20,7 +20,7 @@
     margin: 0;
   }
 
-  &__description{
+  &__description {
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
@@ -30,15 +30,15 @@
   }
 }
 
-.advantage{
-  &__title{
+.advantage {
+  &__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     margin: 0;
   }
 
-  &__description{
+  &__description {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -49,8 +49,8 @@
   z-index: 10;
 }
 
-.nootrisimg{
-  &__lemon{
+.nootrisimg {
+  &__lemon {
     height: 463px;
     width: 533px;
 
@@ -63,7 +63,7 @@
 
   }
 
-  &__nootris{
+  &__nootris {
     height: 635px;
     width: 224px;
 
@@ -77,7 +77,7 @@
   }
 
 
-  &__ginger{
+  &__ginger {
     height: 409px;
     width: 496px;
 
@@ -95,6 +95,6 @@
   top: 60px;
   right: 100px;
 
-  height:984px;
+  height: 984px;
   width: 816px;
 }

@@ -1,13 +1,13 @@
-.discount{
-  &__offer{
+.discount {
+  &__offer {
     display: flex;
   }
 
-  &__title{
+  &__title {
     text-align: center;
   }
 
-  &__price{
+  &__price {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,7 +15,7 @@
     padding-bottom: 59px;
   }
 
-  &__order-button{
+  &__order-button {
     margin: 80px auto 0 auto;
   }
 
@@ -24,12 +24,12 @@
   padding-top: 110px;
 }
 
-.discount-title{
-  &__gold{
+.discount-title {
+  &__gold {
     color: #fcb500;
   }
 
-  &__white{
+  &__white {
     color: #FFFFFF;
   }
 
@@ -38,27 +38,27 @@
   line-height: 57px;
 }
 
-.discount-price{
-  &__old{
+.discount-price {
+  &__old {
     font-size: 36px;
     font-weight: 400;
     color: #ADADAD;
     text-decoration: line-through;
   }
 
-  &__new{
+  &__new {
     font-size: 48px;
     font-weight: 400;
     color: #FFFFFF;
   }
 }
 
-.card{
-  &__img{
+.card {
+  &__img {
     width: 195px;
   }
 
-  &__top-text{
+  &__top-text {
     color: #FFFFFF;
     text-align: center;
 
@@ -66,7 +66,7 @@
 
   }
 
-  &__bottom-text{
+  &__bottom-text {
     color: #FCB500;
     text-align: center;
 
@@ -85,17 +85,17 @@
 
 }
 
-.card-upper{
-  &__img{
+.card-upper {
+  &__img {
     width: 420px;
   }
 
-  &__top-text{
+  &__top-text {
     margin: 45px 0 8px 0;
 
   }
 
-  &__bottom-text{
+  &__bottom-text {
   }
 
   width: 420px;
@@ -106,7 +106,7 @@
 
 }
 
-.discount-order-button{
+.discount-order-button {
 
   width: 256px;
   height: 56px;
