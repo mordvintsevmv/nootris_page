@@ -54,6 +54,7 @@ More than 100 items:
 
 [🔝Top🔝](#content)
 
+---
 
 ### [Creating Cards](#card)
 
@@ -82,6 +83,8 @@ Large Card:
 ![img_1.png](img/large_card.png)
 
 [🔝Top🔝](#content)
+
+---
 
 ### [Adaptive design](#adaptive)
 
