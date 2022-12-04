@@ -21,7 +21,8 @@ $maxWidth: 1440;
   width: calc(#{$minSize + px} + #{$diffSize} * (100vw / #{$maxWidth}));
 }
 
-@mixin adaptive-zoom($maxSize, $minSize){
+@mixin adaptive-scale($maxSize, $minSize){
   $diffSize: $maxSize - $minSize;
-  zoom: calc(#{$minSize} + #{$diffSize} * (100vw / #{$maxWidth}));
+  transform: scale(#{$minSize} + #{$diffSize} * (100vw / #{$maxWidth}));
+
 }

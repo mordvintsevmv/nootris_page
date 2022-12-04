@@ -23,33 +23,39 @@
     line-height: 24px;
     margin-right: 40px;
 
-    @media screen and (max-width: 1280px){
+    @media screen and (max-width: 1280px) {
       text-align: center;
       margin: 10px 0 10px 0;
       display: block;
     }
+
   }
 
-  &__button{
+  &__button {
     filter: invert(100%);
     width: 50px;
     cursor: pointer;
   }
 
-  @media screen and (max-width: 1280px){
+  &__item:hover {
+    color: $orangeColor;
+  }
+
+
+  @media screen and (max-width: 1280px) {
 
     position: absolute;
 
-    margin:auto;
-    left:0;
-    right:0;
+    margin: auto;
+    left: 0;
+    right: 0;
 
     border-radius: 5px;
 
     width: 250px;
 
     background-color: $greyColor;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
     z-index: 12;
   }
@@ -82,6 +88,13 @@
   position: relative;
 
   cursor: pointer;
+
+}
+
+.basket:hover {
+  path {
+    fill: $orangeColor;
+  }
 }
 
 .logo {
@@ -89,5 +102,11 @@
   height: 35px;
 
   cursor: pointer;
-
 }
+
+.logo:hover {
+  path {
+    fill: $orangeColor;
+  }
+}
+
