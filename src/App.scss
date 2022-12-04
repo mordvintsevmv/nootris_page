@@ -20,3 +20,8 @@ $maxWidth: 1440;
   $diffSize: $maxSize - $minSize;
   width: calc(#{$minSize + px} + #{$diffSize} * (100vw / #{$maxWidth}));
 }
+
+@mixin adaptive-zoom($maxSize, $minSize){
+  $diffSize: $maxSize - $minSize;
+  zoom: calc(#{$minSize} + #{$diffSize} * (100vw / #{$maxWidth}));
+}
