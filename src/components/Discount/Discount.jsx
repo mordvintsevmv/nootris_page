@@ -1,5 +1,5 @@
 import "./Discount.scss"
-import Card from "./Include";
+import Card from "./Card";
 
 const Discount = () => {
     return (<div className="discount">
@@ -14,10 +14,10 @@ const Discount = () => {
         </div>
 
         <div className="discount-offer discount__offer">
-            <Card top_text="Содержит" bottom_text="имбирь" img_url="/img/ginger.png"/>
+            <Card top_text="Содержит" bottom_text="имбирь" img_url="/img/ginger.png" mobile_order={1}/>
             <Card top_text="+ Бесплатная доставка" bottom_text="Специальная цена" img_url="/img/nootris_h.png"
-                  upper={true}/>
-            <Card top_text="Нейтрализует" bottom_text="вирусы" img_url="/img/virus.png"/>
+                  upper={true} mobile_order={3}/>
+            <Card top_text="Нейтрализует" bottom_text="вирусы" img_url="/img/virus.png" mobile_order={2}/>
         </div>
 
         <div className="discount-order-button discount__order-button">
