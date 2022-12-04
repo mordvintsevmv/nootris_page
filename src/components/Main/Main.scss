@@ -10,17 +10,10 @@
   padding-left: 64px;
   padding-top: 96px;
 
-  @media (max-width: 999px) {
-    height: 600px;
-  }
-
   @media (max-width: 720px) {
-    height: 600px;
+    padding-left: 30px;
   }
 
-  @media (max-width: 420px) {
-    height: 600px;
-  }
 
 }
 
