@@ -77,9 +77,11 @@ const Card = ({top_text, bottom_text, img_url, upper = false, mobile_order = 0})
 **Example**
 
 Standard Card:
+
 ![img.png](img/standard_card.png)
 
 Large Card:
+
 ![img_1.png](img/large_card.png)
 
 [🔝Top🔝](#content)
