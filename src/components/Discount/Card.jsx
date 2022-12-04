@@ -6,16 +6,12 @@ const Card = ({top_text, bottom_text, img_url, upper = false, mobile_order=0}) =
 
     useEffect(() =>{
 
-        if (window.innerWidth < 1280) {
-            setIsMobile(true)
-        } else {
-            setIsMobile(false)
-        }
+        handleResize()
 
         window.addEventListener("resize", handleResize)},[])
 
     const handleResize = () => {
-        if (window.innerWidth < 1280) {
+        if (window.innerWidth < 1020) {
             setIsMobile(true)
         } else {
             setIsMobile(false)

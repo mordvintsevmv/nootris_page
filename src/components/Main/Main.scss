@@ -15,8 +15,8 @@
 .tagline {
   &__title {
     color: $whiteColor;
-    @include adaptive-line-height(152, 30);
-    @include adaptive-font(144, 24);
+    @include adaptive-line-height(152, 15);
+    @include adaptive-font(144, 10);
     font-weight: 700;
     margin: 0;
   }
@@ -25,10 +25,10 @@
     font-weight: 400;
     line-height: 28px;
 
-    @include adaptive-font(24, 15);
-    @include adaptive-line-height(28, 18);
+    @include adaptive-font(24, 18);
+    @include adaptive-line-height(28, 20);
 
-    @include adaptive-width(640, 400);
+    @include adaptive-width(640, 200);
 
     height: 54px;
   }
@@ -50,7 +50,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    width: 350px;
+    @include adaptive-width(350, 200);
     margin: 10px 0 0 0;
   }
 

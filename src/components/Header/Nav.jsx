@@ -14,7 +14,10 @@ const Nav = () => {
             setIsMobile(false)
         }
 
-        window.addEventListener("resize", handleResize)},[])
+        window.addEventListener("resize", handleResize)
+        window.addEventListener("scroll", handleScrollCloseMenu)
+
+    },[])
 
     const handleResize = () => {
         if (window.innerWidth < 1280) {
@@ -28,20 +31,27 @@ const Nav = () => {
         setIsMenu(true)
     }
 
-    const handleCloseMenu = () => {
+    const handleMouseCloseMenu = () => {
         setIsMenu(false)
+    }
+
+
+    const handleScrollCloseMenu = () => {
+        if (window.scrollY > 90){
+            setIsMenu(false)
+        }
     }
 
     return (<span>
 
         {(isMobile && !isMenu) &&
             <span>
-            <img className="navigation__button" src={process.env.PUBLIC_URL + "/img/menu.png"} alt="menu" onClick={handleOpenMenu} onBlur={handleCloseMenu}/>
+            <img className="navigation__button" src={process.env.PUBLIC_URL + "/img/menu.png"} alt="menu" onClick={handleOpenMenu}/>
             </span>
         }
 
         {(!isMobile || isMenu) &&
-            <nav className="navigation" onMouseLeave={handleCloseMenu}>
+            <nav className="navigation" onMouseLeave={handleMouseCloseMenu}>
                 <a href="#" className="navigation__item">FAQ</a>
                 <a href="#" className="navigation__item">Оплата и доставка</a>
                 <a href="#" className="navigation__item">Возврат</a>
