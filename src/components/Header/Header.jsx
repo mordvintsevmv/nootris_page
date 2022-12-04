@@ -10,7 +10,7 @@ const Header = () => {
 
         <Nav/>
 
-        <Basket items_num={100}/>
+        <Basket items_num={1}/>
 
     </div>)
 }

@@ -1,0 +1,22 @@
+$blackColor: #000000;
+$greyColor: #111111;
+$lightGreyColor: #ADADAD;
+$whiteColor: #FFFFFF;
+$orangeColor: #FCB500;
+
+$maxWidth: 1440;
+
+@mixin adaptive-font($maxSize, $minSize){
+  $diffSize: $maxSize - $minSize;
+  font-size: calc(#{$minSize + px} + #{$diffSize} * (100vw / #{$maxWidth}));
+}
+
+@mixin adaptive-line-height($maxSize, $minSize){
+  $diffSize: $maxSize - $minSize;
+  line-height: calc(#{$minSize + px} + #{$diffSize} * (100vw / #{$maxWidth}));
+}
+
+@mixin adaptive-width($maxSize, $minSize){
+  $diffSize: $maxSize - $minSize;
+  width: calc(#{$minSize + px} + #{$diffSize} * (100vw / #{$maxWidth}));
+}

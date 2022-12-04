@@ -4,6 +4,7 @@ import NootrisComponents from "./NootrisComponents";
 const Main = () => {
     return (<div className="main" style={{backgroundImage: `url(${process.env.PUBLIC_URL + "/img/background.png"})`}}>
 
+        <NootrisComponents/>
 
         <div className="tagline">
             <h1 className="tagline__title">АКТИВИРУЙ ИММУНИТЕТ!</h1>
@@ -20,7 +21,6 @@ const Main = () => {
                 и сезонных простуд</p>
         </div>
 
-        <NootrisComponents/>
 
     </div>)
 }

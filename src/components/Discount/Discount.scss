@@ -1,3 +1,5 @@
+@import "src/App";
+
 .discount {
   &__offer {
     display: flex;
@@ -25,36 +27,40 @@
   }
 
   min-height: 926px;
-  background-color: #111111;
-  padding-top: 110px;
+  background-color: $greyColor;
+  padding-top: 70px;
+
+  @media screen and (max-width: 1020px) {
+    padding-bottom: 60px;
+  }
 }
 
 .discount-title {
   &__gold {
-    color: #fcb500;
+    color: $orangeColor;
   }
 
   &__white {
-    color: #FFFFFF;
+    color: $whiteColor;
   }
 
   font-weight: 700;
-  font-size: 30px;
-  line-height: 57px;
+  @include adaptive-line-height(57, 30);
+  @include adaptive-font(30, 5);
 }
 
 .discount-price {
   &__old {
     font-size: 36px;
     font-weight: 400;
-    color: #ADADAD;
+    color: $lightGreyColor;
     text-decoration: line-through;
   }
 
   &__new {
     font-size: 48px;
     font-weight: 400;
-    color: #FFFFFF;
+    color: $whiteColor;
   }
 }
 
@@ -64,16 +70,17 @@
   }
 
   &__top-text {
-    color: #FFFFFF;
+    color: $whiteColor;
     text-align: center;
-
+    font-weight: 400;
     margin: 78px 0 0 0;
 
   }
 
   &__bottom-text {
-    color: #FCB500;
+    color: $orangeColor;
     text-align: center;
+    font-weight: 400;
 
     margin: 0;
 
@@ -120,8 +127,8 @@
   width: 256px;
   height: 56px;
 
-  background-color: #fcb500;
-  color: #000000;
+  background-color: $orangeColor;
+  color: $blackColor;
 
   font-weight: 400;
   font-size: 18px;

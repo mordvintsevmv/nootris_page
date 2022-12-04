@@ -1,7 +1,9 @@
-.main {
-  height: 730px;
+@import "src/App";
 
-  background-color: #FCB500;
+.main {
+  height: 700px;
+
+  background-color: $orangeColor;
 
   position: relative;
 
@@ -12,11 +14,10 @@
 
 .tagline {
   &__title {
-    color: #FFFFFF;
-    line-height: calc(30px + 122 * (100vw / 1440));
-    font-size: calc(24px + 120 * (100vw / 1440));
+    color: $whiteColor;
+    @include adaptive-line-height(152, 30);
+    @include adaptive-font(144, 24);
     font-weight: 700;
-
     margin: 0;
   }
 
@@ -24,11 +25,17 @@
     font-weight: 400;
     line-height: 28px;
 
-    font-size: calc(16px + 8 * (100vw / 1440));
+    @include adaptive-font(24, 15);
+    @include adaptive-line-height(28, 18);
 
-    width: calc(400px + 240 * (100vw / 1440));
+    @include adaptive-width(640, 400);
+
     height: 54px;
   }
+
+  position: relative;
+  z-index: 10;
+
 }
 
 .advantage {
@@ -44,10 +51,10 @@
     font-size: 18px;
     line-height: 21px;
     width: 350px;
+    margin: 10px 0 0 0;
   }
 
-  padding-top: 120px;
-  z-index: 10;
+  padding-top: 100px;
 }
 
 .nootrisimg {
@@ -59,7 +66,7 @@
 
     position: absolute;
 
-    bottom: 100px;
+    bottom: 140px;
     right: 180px;
 
   }
@@ -93,7 +100,7 @@
   position: absolute;
 
   top: 60px;
-  right: 100px;
+  right: 60px;
 
   height: 984px;
   width: 816px;
