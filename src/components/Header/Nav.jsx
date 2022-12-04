@@ -6,7 +6,7 @@ const Nav = () => {
     const [isMobile, setIsMobile] = useState(false)
     const [isMenu, setIsMenu] = useState(false)
 
-    useEffect(() =>{
+    useEffect(() => {
 
         if (window.innerWidth < 1280) {
             setIsMobile(true)
@@ -17,7 +17,7 @@ const Nav = () => {
         window.addEventListener("resize", handleResize)
         window.addEventListener("scroll", handleScrollCloseMenu)
 
-    },[])
+    }, [])
 
     const handleResize = () => {
         if (window.innerWidth < 1280) {
@@ -27,7 +27,7 @@ const Nav = () => {
         }
     }
 
-    const handleOpenMenu = () =>{
+    const handleOpenMenu = () => {
         setIsMenu(true)
     }
 
@@ -37,29 +37,26 @@ const Nav = () => {
 
 
     const handleScrollCloseMenu = () => {
-        if (window.scrollY > 90){
+        if (window.scrollY > 90) {
             setIsMenu(false)
         }
     }
 
     return (<span>
 
-        {(isMobile && !isMenu) &&
-            <span>
-            <img className="navigation__button" src={process.env.PUBLIC_URL + "/img/menu.png"} alt="menu" onClick={handleOpenMenu}/>
-            </span>
-        }
+        {(isMobile && !isMenu) && <span>
+            <img className="navigation__button" src={process.env.PUBLIC_URL + "/img/menu.png"} alt="menu"
+                 onClick={handleOpenMenu}/>
+            </span>}
 
-        {(!isMobile || isMenu) &&
-            <nav className="navigation" onMouseLeave={handleMouseCloseMenu}>
-                <a href="#" className="navigation__item">FAQ</a>
-                <a href="#" className="navigation__item">Оплата и доставка</a>
-                <a href="#" className="navigation__item">Возврат</a>
-                <a href="#" className="navigation__item">Исследования</a>
-                <a href="#" className="navigation__item">Личный кабинет</a>
-                <span className="navigation__item">8 (800) 600-09-90</span>
-            </nav>
-        }
+        {(!isMobile || isMenu) && <nav className="navigation" onMouseLeave={handleMouseCloseMenu}>
+            <a href="#" className="navigation__item">FAQ</a>
+            <a href="#" className="navigation__item">Оплата и доставка</a>
+            <a href="#" className="navigation__item">Возврат</a>
+            <a href="#" className="navigation__item">Исследования</a>
+            <a href="#" className="navigation__item">Личный кабинет</a>
+            <span className="navigation__item">8 (800) 600-09-90</span>
+        </nav>}
                     </span>)
 }
 

@@ -6,23 +6,17 @@ $orangeColor: #FCB500;
 
 $maxWidth: 1440;
 
-@mixin adaptive-font($maxSize, $minSize){
+@mixin adaptive-font($maxSize, $minSize) {
   $diffSize: $maxSize - $minSize;
   font-size: calc(#{$minSize + px} + #{$diffSize} * (100vw / #{$maxWidth}));
 }
 
-@mixin adaptive-line-height($maxSize, $minSize){
+@mixin adaptive-line-height($maxSize, $minSize) {
   $diffSize: $maxSize - $minSize;
   line-height: calc(#{$minSize + px} + #{$diffSize} * (100vw / #{$maxWidth}));
 }
 
-@mixin adaptive-width($maxSize, $minSize){
+@mixin adaptive-width($maxSize, $minSize) {
   $diffSize: $maxSize - $minSize;
   width: calc(#{$minSize + px} + #{$diffSize} * (100vw / #{$maxWidth}));
-}
-
-@mixin adaptive-scale($maxSize, $minSize){
-  $diffSize: $maxSize - $minSize;
-  transform: scale(#{$minSize} + #{$diffSize} * (100vw / #{$maxWidth}));
-
 }

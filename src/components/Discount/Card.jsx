@@ -1,14 +1,15 @@
 import {useEffect, useState} from "react";
 
-const Card = ({top_text, bottom_text, img_url, upper = false, mobile_order=0}) => {
+const Card = ({top_text, bottom_text, img_url, upper = false, mobile_order = 0}) => {
 
     const [isMobile, setIsMobile] = useState(false)
 
-    useEffect(() =>{
+    useEffect(() => {
 
         handleResize()
 
-        window.addEventListener("resize", handleResize)},[])
+        window.addEventListener("resize", handleResize)
+    }, [])
 
     const handleResize = () => {
         if (window.innerWidth < 1020) {
@@ -18,8 +19,7 @@ const Card = ({top_text, bottom_text, img_url, upper = false, mobile_order=0}) =
         }
     }
 
-    return (
-        <div className={upper ? "card card-upper" : "card"} style={isMobile ?{order: mobile_order} : null}>
+    return (<div className={upper ? "card card-upper" : "card"} style={isMobile ? {order: mobile_order} : null}>
 
         <img className={upper ? "card__img card-upper__img" : "card__img"} src={process.env.PUBLIC_URL + img_url}
              alt="card_img"/>

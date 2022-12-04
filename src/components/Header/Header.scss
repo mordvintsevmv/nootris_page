@@ -15,7 +15,8 @@
 
   @media screen and (max-width: 720px) {
     padding-left: 30px;
-    padding-right: 30px;  }
+    padding-right: 30px;
+  }
 }
 
 .navigation {
@@ -66,10 +67,6 @@
 }
 
 .basket {
-  &__img {
-
-  }
-
   &__circle {
     position: absolute;
     bottom: -4px;
