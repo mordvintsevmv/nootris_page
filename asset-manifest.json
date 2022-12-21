@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nootris_page/static/css/main.2ca2dabd.css",
+    "main.js": "/nootris_page/static/js/main.a60865bd.js",
+    "index.html": "/nootris_page/index.html",
+    "main.2ca2dabd.css.map": "/nootris_page/static/css/main.2ca2dabd.css.map",
+    "main.a60865bd.js.map": "/nootris_page/static/js/main.a60865bd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ca2dabd.css",
+    "static/js/main.a60865bd.js"
+  ]
+}
