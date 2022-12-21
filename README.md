@@ -1,8 +1,6 @@
-# Test Task for WillSkill
+# Nootris Page
 
-**Position:** Junior FrontEnd Developer
-
-<a href="https://mordvintsevmv.github.io/willskill_test">Test App</a>
+<a href="https://mordvintsevmv.github.io/nootris_page">Test App</a>
 
 # <a name="content">Content</a>
 
