@@ -2,24 +2,44 @@
 
 <a href="https://mordvintsevmv.github.io/nootris_page">Test App</a>
 
+---
+
 # <a name="content">Content</a>
 
 0. <a href="#task">Task</a>
 
-1. <a href="#features">Features</a>
+1. <a href="#technologies">Technologies</a>
+
+2. <a href="#features">Features</a>
    - <a href="#basket">Changing amount of items it Basket</a>
    - <a href="#card">Creating Cards</a>
    - <a href="#adaptive">Adaptive design</a>
 
-2. <a href="#technologies">Technologies</a>
 
 3. <a href="#contacts">Contacts</a>
+
+---
 
 ## [Task](#task)
 
 Develop a landing page based on the Figma layout using React, BEM, SCSS, semantics, adaptivity
 
 [🔝Top🔝](#content)
+
+---
+
+## [Technologies](#technologies)
+
+- React
+- SCSS
+- HTML/CSS
+- BEM-methodology
+- JavaScript
+- Media-query
+
+[🔝Top🔝](#content)
+
+---
 
 ## [Features](#features)
 
@@ -135,17 +155,7 @@ Adaptive page:
 
 [🔝Top🔝](#content)
 
-## [Technologies](#technologies)
-
-- React
-- SCSS
-- HTML/CSS
-- BEM-methodology
-- JavaScript
-- Media-query
-
-[🔝Top🔝](#content)
-
+---
 
 ## <a name="contacts">Contacts</a>
 
