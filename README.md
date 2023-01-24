@@ -6,21 +6,21 @@
 
 # <a name="content">Content</a>
 
-0. <a href="#task">Task</a>
+0. [Task](#task)
 
-1. <a href="#technologies">Technologies</a>
+1. [Technologies](#technologies)
 
-2. <a href="#features">Features</a>
-   - <a href="#basket">Changing amount of items it Basket</a>
-   - <a href="#card">Creating Cards</a>
-   - <a href="#adaptive">Adaptive design</a>
+2. [Features](#features)
+   - [Changing amount of items it Basket](#basket)
+   - [Creating Cards](#card)
+   - [Adaptive design](#adaptive)
 
 
-3. <a href="#contacts">Contacts</a>
+3. [Contacts](#contacts)
 
 ---
 
-## [Task](#task)
+## <a href="#task">Task</a>
 
 Develop a landing page based on the Figma layout using React, BEM, SCSS, semantics, adaptivity
 
@@ -28,7 +28,7 @@ Develop a landing page based on the Figma layout using React, BEM, SCSS, semanti
 
 ---
 
-## [Technologies](#technologies)
+## <a href="#technologies">Technologies</a>
 
 - React
 - SCSS
@@ -41,9 +41,9 @@ Develop a landing page based on the Figma layout using React, BEM, SCSS, semanti
 
 ---
 
-## [Features](#features)
+## <a href="#features">Features</a>
 
-### [Changing amount of items it Basket](#basket)
+### <a href="#basket">Changing amount of items it Basket</a>
 
 The basket component has been designed so that it takes in the quantity of 
 items and displays it. So, these components can later be used to dynamically 
@@ -74,7 +74,7 @@ More than 100 items:
 
 ---
 
-### [Creating Cards](#card)
+### <a href="#card">Creating Cards</a>
 
 A Card component was developed to quickly create the same type of card.
 
@@ -106,7 +106,7 @@ Large Card:
 
 ---
 
-### [Adaptive design](#adaptive)
+### <a href="#adaptive">Adaptive design</a> 
 
 The website design adapts to most types of screens.
 
